@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Lab</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+ <header class="hero"> 
+    <!-- Barra superior -->
+    <div class="navbar-top">
+      <div class="logo">SKIN LAB</div>
+      <span class="hamburguesa">&#9776;</span>
+
+      <!-- Menú que se despliega debajo del logo -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#historia">Quienes somos</a></li>
+          <li><a href="#pieles">Pieles</a></li>
+          <li><a href="#productos">Productos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero-text">
+      <h1>La guía completa para resaltar</h1>
+      <h2>TU PROPIO BRILLO</h2>
+    </div>
+  </header>  
+
+<main>
+  <Section id="historia">
+        <div class="texto">
+       <h2>Que es <br>SKIN LAB?  </h2>
+       <p>Es una guía pensada para acompañarte en el mundo del skincare de una forma simple y práctica. Queremos ayudarte a conocer mejor tu piel, recomendarte los productos que realmente se adaptan a vos y mostrarte dónde podés conseguirlos. Nuestra idea es que cuidar tu piel no sea complicado, sino un momento para disfrutar y sentirte bien cada día.</p>
+        </div>
+       <img src="/img/que.es.png" alt="Nuestra historia">
+    </Section>
+
+    <section id="pieles">
+        
+        <h3>TIPO DE PIELES</h3>
+        <div class="image-container">
+        <div class="card">
+                <img src="/img/piel-mixta.png" alt="Piel Mixta">
+                <div class="texto-pieles">MIXTA</div>
+            </div>
+            <div class="card">
+                <img src="/img/piel-grasa.png" alt="Piel Grasa">
+                <div class="texto-pieles">GRASA</div>
+            </div>
+            <div class="card">
+                <img src="/img/piel-seca (1).png" alt="Piel Seca">
+                <div class="texto-pieles">SECA</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="productos">
+
+        <h4>Productos del mes </h4>
+
+        <div class="product-container">
+            <div class="product-card">
+                <img src="/img/cerave.png" alt="CeraVe Limpiador Facial">
+                <h5>CeraVe <br> Control de imperfecciones</h5>
+                <p>Limpiador facial</p>
+                <button>Ver mas</button>
+            </div>
+            <div class="product-card">
+                <img src="/img/vitc.png" alt="Garnier Serum Vitamina C">
+                <h5>Garnier<br> Express aclara - Anti manchas</h5>
+                <p>Serum Vitamina C</p>
+                <button>Ver mas</button>
+            </div>
+            <div class="product-card">
+                <img src="/img/noni.png" alt="Neutrogena Serum con Extracto">
+                <h5>Celimax<br>Noni Ampoule</h5>
+                <p>Limpiador facial</p>
+                <button>Ver mas</button>
+            </div>
+            <div class="product-card">
+                <img src="/img/centella.png" alt="Skin1004 Clay Mask">
+                <h5>Skin 1004 <br> Poremizing Clay stick mask</h5>
+                <p>Mascarilla de arcilla en barra</p>
+                <button>Ver mas</button>
+            </div>
+        </div>
+
+    </section>
+<footer>
+  <div class="Redes">
+    <h1>redes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eius saepe possimus earum dicta veniam sequi sunt est repellendus maiores omnis, itaque repellat numquam odit impedit, ipsa, similique a cumque.</p>
+  </div>
+</footer>
+</main>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const hamburguesa = document.querySelector('.hamburguesa');
+  const navbar = document.querySelector('.navbar');
+  const header = document.querySelector('.hero');
+
+  hamburguesa.addEventListener('click', () => {
+    navbar.classList.toggle('mostrar');
+    header.classList.toggle('header-activo'); // 👈 activa el fondo del navbar-top
+  });
+});
+  </script>
+</body>
+</html>
+
