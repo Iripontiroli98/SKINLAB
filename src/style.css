@@ -13,7 +13,7 @@
       background: url('../img/banner.jpg') no-repeat center center;
       background-size: cover;
       height: 100vh;
-      color: white;
+      color: rgb(200, 44, 44);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -147,6 +147,7 @@
   margin: 50px 20px;
   height: 500px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 #historia h2{
@@ -174,6 +175,7 @@
 #historia img{
   width: 50%;
   size: auto;
+  object-fit: cover;
 
 }
 
@@ -302,13 +304,30 @@ h4 {
 }
 
  .navbar{
-   display: block;
-   position: static;
    transform: none;
    background-color: transparent;
-   box-shadow: none;
-   z-index: auto;
+   display: flex;
  }
+
+ .navbar ul{
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+ }
+
+ .navbar ul li {
+  margin: 0 15px;
+ }
+
+
+ .hamburguesa {
+  display: none;
+ }
+.logo{
+  transform: translateX(-50%);
+  top: 35px;
+}
+
    .product-card {
     flex: 1 1 22%; /* 👈 vuelve al 22% como tenías antes */
   }
@@ -395,8 +414,8 @@ h4 {
       color: #f1c40f;
     }
 
-    @media (max-width: 768px) {
-      .footer-container {
+
+    .footer-container {
         flex-direction: column;
         text-align: center;
       }
@@ -404,4 +423,3 @@ h4 {
       .footer-links, .footer-social, .footer-logo {
         margin: 20px 0;
       }
-    }
