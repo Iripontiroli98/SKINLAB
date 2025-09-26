@@ -241,7 +241,7 @@ h3{
   font-family: Arial, sans-serif;
 }
 
-h4 {
+#productos h4 {
   font-size: clamp(1.2rem, 3vw, 2rem);
   font-family:"Open Sans", sans-serif ;
   margin-bottom: 20px;
@@ -308,52 +308,44 @@ h4 {
 .product-card button:hover {
   background-color: rgb(76, 74, 74);
 }
-@media screen and (min-width:768px) {
-  header h1 {
-    font-size: 1.5em;
+
+/*Como usar*/
+.pasos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.paso {
+  flex: 1 1 1 calc(50% - 20px); 
+  overflow: hidden;
+  margin: 30px;
 }
 
- .navbar{
-   transform: none;
-   background-color: transparent;
-   display: flex;
- }
+.paso img {
+  height: auto;
+  display: block;
+  padding: 20px;
+}
 
- .navbar ul{
-  flex-direction: row;
-  justify-content: flex-start;
+#como-usar h4 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-family:"Open Sans", sans-serif ;
+  margin: 20px;
+  color: #B22020;
+  font-weight: 900;
+}
+
+.paso p, h5 {
+  font-size: clamp(1rem, 2vw, 1rem);
+  margin: 10px 0;
+  color: #333;
   text-align: left;
- }
-
- .navbar ul li {
-  margin: 0 15px;
- }
-
-
- .hamburguesa {
-  display: none;
- }
-.logo{
-  transform: translateX(-50%);
-  top: 35px;
+  padding-left: 15px;
 }
 
-   .product-card {
-    flex: 1 1 22%; 
-  }
-  .product-card button {
-    width: 30%; 
-  }
-  #historia{
-  height: 600px ;
-}
-
-.texto{
-    padding: 50px;
-    
-}
-  
- }
+/*Footer*/
 
  footer {
       background-color:#D9D9D9;
@@ -429,3 +421,62 @@ h4 {
       .footer-links, .footer-social, .footer-logo {
         margin: 20px 0;
       }
+
+      @media screen and (min-width:768px) {
+  header h1 {
+    font-size: 1.5em;
+}
+
+ .navbar{
+   transform: none;
+   background-color: transparent;
+   display: flex;
+ }
+
+ .navbar ul{
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+ }
+
+ .navbar ul li {
+  margin: 0 15px;
+ }
+
+
+ .hamburguesa {
+  display: none;
+ }
+.logo{
+  transform: translateX(-50%);
+  top: 35px;
+}
+
+   .product-card {
+    flex: 1 1 22%; 
+  }
+  .product-card button {
+    width: 30%; 
+  }
+  #historia{
+  height: 600px ;
+}
+
+.texto{
+    padding: 50px;
+    
+}
+.pasos{
+  display: flex;
+}
+.paso {
+  flex: 1;
+  margin: 10px;
+}
+  
+.paso img {
+  margin: 0px 80px;
+  
+}
+
+ }
