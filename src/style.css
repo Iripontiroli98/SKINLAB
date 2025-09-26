@@ -23,7 +23,7 @@
       margin: 10px 20px;
     }
 
-    /* Barra superior con logo y hamburguesa */
+
 .navbar-top {
   display: flex;
   justify-content: space-between;
@@ -31,8 +31,7 @@
   padding: 10px;
   position: relative;
   z-index: 1001;
-  background-color: transparent; /* 👈 transparente al inicio */
-  transition: background-color 0.3s ease;
+  background-color: transparent;
 }
 
 
@@ -262,7 +261,7 @@ h4 {
 
 /* Tarjeta producto base */
 .product-card {
-  flex: 1 1 calc(50% - 20px); /* 👈 en mobile: 2 por fila */
+  flex: 1 1 calc(50% - 20px); 
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -296,7 +295,7 @@ h4 {
 /* Botón */
 .product-card button {
   display: block;
-  width: 50%; /* más grande en mobile */
+  width: 50%;
   margin: 0 auto 10px;
   padding: 8px;
   background-color: #B22020;
@@ -340,10 +339,10 @@ h4 {
 }
 
    .product-card {
-    flex: 1 1 22%; /* 👈 vuelve al 22% como tenías antes */
+    flex: 1 1 22%; 
   }
   .product-card button {
-    width: 30%; /* botón más chico en desktop */
+    width: 30%; 
   }
   #historia{
   height: 600px ;
@@ -357,8 +356,7 @@ h4 {
  }
 
  footer {
-      background-color: #2c2c2c;
-      color: #fff;
+      background-color:#D9D9D9;
       padding: 40px 20px;
       display: flex;
       justify-content: space-between;
@@ -392,18 +390,18 @@ h4 {
     }
 
     .links-footer ul li a {
-      color: #fff;
+      color: #B22020;
       text-decoration: none;
       font-size: 16px;
       transition: color 0.3s;
     }
 
     .links-footer ul li a:hover {
-      color: #f1c40f;
+      color: #5b1111;
     }
 
     .redes a {
-      color: #fff;
+      color: #B22020;
       font-size: 24px;
       margin: 0 15px;
       text-decoration: none;
@@ -411,19 +409,16 @@ h4 {
     }
 
     .redes a:hover {
-      color: #f1c40f;
+      color: #5b1111;
     }
 
     .footer-logo h2 {
       font-size: 28px;
       margin: 0;
       font-weight: bold;
-      color: #fff;
+      color: #B22020;
     }
 
-    .footer-logo span {
-      color: #f1c40f;
-    }
 
 
     .footer-container {
