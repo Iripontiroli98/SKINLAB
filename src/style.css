@@ -200,11 +200,20 @@ h3{
 }
 
 
+
+.card-hovered img {
+  filter: brightness(80%);
+}
+
+.card-hovered .texto-pieles {
+  transform: translate(-50%, -50%) scale(1.1);
+}
 .card {
     position: relative;
     width: 30%;
     border-radius: 15px;
     overflow: hidden;
+    
 }
 
 .card img {
@@ -212,6 +221,7 @@ h3{
     height: auto;
     display: block;
     padding: 10px;
+   transition: filter 0.3s ease-in-out; 
 }
 
 .texto-pieles {
@@ -222,6 +232,7 @@ h3{
     transform: translate(-50%, -50%);
     color: white;
     font-size: clamp(1.2rem, 5vw, 2rem);
+    transition: transform 0.3s ease-in-out;
 
 }
 #productos { 
