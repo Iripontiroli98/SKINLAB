@@ -6,14 +6,14 @@
     body, html {
       margin: 0;
       padding: 0;
-      font-family: "Roboto", sans-serif;
+      font-family: "Open Sans", sans-serif;
     }
 
     .hero {
       background: url('../img/banner.jpg') no-repeat center center;
       background-size: cover;
       height: 100vh;
-      color: rgb(200, 44, 44);
+      color: #B22020;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -36,10 +36,15 @@
 
 
     .logo {
-      font-weight: bold;
-      font-size: 1.2em;
-      transition: color 0.3s ease;
-    }
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-family: "Rubik Mono One", sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+     transition: color 0.3s ease;
+}
+
 
     .hamburguesa {
       font-size: 1.5em;
@@ -110,17 +115,7 @@
       margin-top: auto;
     }
 
-.logo {
-    font-size: 35px;
-    font-family: "Rubik Mono One", sans-serif;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.hero-text {
-    padding: 50px;
-}
 
 .hero-text h1 {
     font-size: clamp(1.2rem, 4vw, 2rem);
@@ -132,12 +127,12 @@
 }
 
 .hero-text h2 {
-    font-size: clamp(1.2rem, 3.5vw, 2rem);
-    font-family: "Rubik Mono One";
-    margin-top: 0%;
+    font-size: clamp(1.3rem, 3.5vw, 2rem);
     display: flex;
     justify-content: flex-end;
-    color: rgb(34, 33, 33);
+    color: #B22020;
+    font-weight: 900;
+    margin-top: 0;
 }
 
 #historia{
@@ -326,7 +321,7 @@ h3{
 .paso img {
   height: auto;
   display: block;
-  padding: 20px;
+  margin: 0px 70px;
 }
 
 #como-usar h4 {
