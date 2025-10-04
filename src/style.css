@@ -148,7 +148,6 @@
   font-size: clamp(1rem, 4vw, 2.5rem);
   font-family: "Rubik Mono One", sans-serif;
   font-weight: 400;
-  padding: 50px;
   color: #B22020;
 }
 
@@ -156,8 +155,6 @@
   font-size: clamp(0.9rem, 2.5vw, 1.4rem);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  width: 60%
-  
  
 }
 
