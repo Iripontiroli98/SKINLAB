@@ -23,6 +23,20 @@
       margin: 10px 20px;
     }
 
+    .hero2 {
+      background-size: cover;
+      height: 15vh;
+      color: #B22020;
+      background-color: #f1f0ed;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 20px;
+      position: relative;
+      transition: background-color 0.3s ease;
+      margin: 10px 20px;
+    }
+
 
 .navbar-top {
   display: flex;
@@ -226,6 +240,7 @@ h3{
     transition: transform 0.3s ease-in-out;
 
 }
+
 #productos { 
   max-width: 100%;
   margin: 20px 20px;
@@ -414,7 +429,59 @@ h3{
         margin: 20px 0;
       }
 
-      @media screen and (min-width:768px) {
+
+#piel {
+    background-color: #f1f0ed;
+    margin: 20px; 
+    height: auto; 
+    border-radius: 20px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    gap: 15px;
+    
+}
+
+#piel img { 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.piel-mixta {
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    margin: 30px;
+}
+
+.piel-mixta h2 {
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-family: "Rubik Mono One", sans-serif;
+    color: #B22020;
+    margin: 0;
+}
+
+.piel-mixta p {
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #B22020;
+    margin: 0;
+}
+
+.piel-mixta ol {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    font-weight: 100;
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+@media screen and (min-width:768px) {
   header h1 {
     font-size: 1.5em;
 }
@@ -453,6 +520,10 @@ h3{
   #historia{
   height: 600px ;
 }
+#historia h2, p {
+  width: 60%;
+  margin: 70px;
+}
 
 .texto{
     padding: 50px;
@@ -470,5 +541,28 @@ h3{
   margin: 0px 80px;
   
 }
-
+#piel {
+flex-direction: row;
+margin: 50px 50px;
+height: 500px;
+}
+    
+#piel img {
+width: auto;
+margin-bottom: 0; 
+}
+    
+.piel-mixta {
+margin: 0px 50px ; 
+text-align: left; 
+flex: 1; 
+gap: 10px;
+}
+    
+.piel-mixta ol {
+padding-left: 20px; 
  }
+
+}
+
+
